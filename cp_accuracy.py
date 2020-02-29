@@ -89,7 +89,7 @@ points = gate_points + zone_points + stand_points
 score = total(points)
 print('\nOFFICAL SCORE: {}'.format(score))
 
-with open('results_accouracy.txt', 'a') as f:
+with open('results_accuracy.txt', 'a') as f:
     f.write('Name: {}, Round: {}, Score: {}\n\tG1: {}\n\tG2: {}\n\tG3: {}\n\tG4: {}\n\tZone: {}\n\tStandUp: {}\n\n'.\
         format(name, rounds, score, "yes" if gate_1 > 0 else "no", "yes" if gate_2 > 0 else "no", "yes" if gate_3 > 0 \
         else "no", "yes" if gate_4 > 0 else "no", zone, stand))
